@@ -26,7 +26,12 @@ Now you want to write a program which can visit the website can and can return y
 In that case, you can use regxy as follows:
 ```python
 from regxy import grab
-grab(string, 'id="pass">', '</span>')
+password = grab(string, 'id="pass">', '</span>')
+print password
+```
+Output
+```
+puSSySlay3r
 ```
 The syntax is following:
 ```python
@@ -72,6 +77,41 @@ It returns a list of matches.
 
 ### What if there's no match?
 Well in that case all the functions return <b>False</b>.
+
+### Cheat Sheet
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Function</th>
+      <th>Syntax</th>
+      <th>Output</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>grab</td>
+      <td>grab(string, start, end)</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td>graball</td>
+      <td>grab(string, start, end)</td>
+      <td>list</td>
+    </tr>
+    <tr>
+    	<td>emails</td>
+    	<td>emails(string)</td>
+    	<td>list</td>
+    </tr>
+    <tr>
+    	<td>numbers</td>
+    	<td>numbers(string)</td>
+    	<td>list</td>
+    </tr>
+  </tbody>
+</table>
 
 ### License & Contribution
 Contributions are heartly welcome, doesn't matter if they are bug reports, pull requests or ideas to make <b>regxy</b> better.</b>
