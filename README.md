@@ -54,7 +54,7 @@ The syntax is as same as the <b>grab</b> function but it returns a list and not 
 ```python
 from regxy import graball
 
-grab(string, 'pass">', '</td>')
+grab(string, 'dark">', '</td>')
 ```
 
 ### emails
